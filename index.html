@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rsponcive.css">
+    <link rel="stylesheet" href="about.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo"data-aos="zoom in" data-aos-duration="1500"data-aos-delay="40">
+                Nikhil<span >Chandelkar</span>
+            </div>
+            <div class="links">
+                <a href=".class" class="link" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="100">Home</a>
+                <a href="#" class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">About</a>
+                <a href="#" class="link" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">Skills</a>
+                <a href="#" class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Project</a>
+                <a href="#" class="link" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="400">Contect</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            <div class="dropdown">
+                <a href="#" class="">Home</a>
+                <a href="#" class="">About</a>
+                <a href="#" class="">Skills</a>
+                <a href="#" class="">Project</a>
+                <a href="#" class="">Contect</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="image"  data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600">
+            <img src="/assets/mainImage.jpg" alt="...." >
+        </div>
+        <div class="content">
+            <h1  data-aos="fade-rigth" data-aos-duration="3000" data-aos-delay="700">Hey i'm <span>Nikhil</span></h1>
+            <div class="typewriter" data-aos="fade-left" data-aos-duration="1700" data-aos-delay="900">
+                I'm a
+                <span id="typewriter-text"></span>
+                <label for="typewriter">|</label>
+            </div>
+            <p data-aos="flip-down" data-aos-duration="1600" data-aos-delay="1100">I’m a dedicated web developer passionate about creating responsive, user-friendly websites. With expertise in both front-end and back-end technologies, I focus on delivering efficient, high-quality digital solutions tailored to client needs.</p>
+            <div class="social-links">
+                <a href="#" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="1400"><i class="fa-brands fa-github"></i></a>
+                <a href="#" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="1600"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="1700"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="2000">
+                <button>Hire Me</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="about">
+        
+    </div> -->
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({offset:0});
+</script>
+<script src="script.js">script.js</script>
+</html>
