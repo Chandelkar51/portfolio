@@ -3,15 +3,12 @@
         overflow: scroll;
         scrollbar-width: 0;
     }
+    /* Navbar */
     .logo{
         position: absolute;
         top: 16px;
         left: 15px;
         font-size: 1.5rem;
-    }
-    .main{
-        display: flex;
-        flex-direction: column;
     }
     .links{
         display: none;
@@ -23,25 +20,76 @@
         font-size: 2rem;
         transition: 1.5s linear;
     }
+
+    /* Main */
+    .main{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0 2rem 0;
+    }
     .content{
         width: 80%;
         /* margin-top: 1rem; */
     }
     .image{
         z-index: -1;
-        width: 50%;
-        height: 50%;
+        width: 300px;
+        height: 250px;
     }
     .social-links i{
         width: 2.5rem;
         height: 2.5rem;
     }
+
+    /* About */
+    .box2{
+        grid-column: 1/5;
+    }
+    .current{
+        padding: 2px 0px 2px 4rem;
+    }
+    .graduation{
+        padding: 2px 0px 2px 4rem;
+    }
+    .school{
+        padding: 2px 0px 2px 4rem;
+    }
+
+    /* Skills */
+    .text{
+        width: 70%;
+    }
+
+    /* Project */
+    .image-card{
+        width: 18em;
+        height: 20em;
+    }
+    .image-card-hover{
+        height: 14rem;
+        margin-top: 6rem;
+    }
+
+    /* Contact */
+    #contact{
+        padding: 2rem 0px;
+    }
+    .label-control{
+        left: 2rem;
+    }
+    .form-control:focus ~ .label-control,
+    .form-control:valid ~ .label-control{
+        transform: translate(-22px, -19px);
+    }
+    .inputs{
+        width: 18rem;
+    }
 }
 
 @media(max-width: 480px){
     .image{
-        width: 40%;
-        height: 35%;
+        width: 220px;
+        height: 190px;
         transition: 1s linear;
     }
     @keyframes animate {
@@ -56,12 +104,117 @@
         }
     }
     .content{
-        width: 70%;
+        width: 90%;
         margin-top: 1rem;
+    }
+    .content p{
+        font-weight: 300;
     }
     .social-links i{
         width: 2rem;
         height: 2rem;
         font-size: 1.15rem;
+    }
+
+    /* about */
+    #edu{
+        padding-left: 2rem;
+    }
+    .current{
+        padding: 2px 2px 2px 2rem;
+        margin-left: -2rem;
+        border-bottom-left-radius: 16px;
+        border-top-left-radius: 10px;
+    }
+    .graduation{
+        padding: 2px 2px 2px 2rem;
+        margin-left: -2rem;
+        border-bottom-left-radius: 16px;
+        border-top-left-radius: 10px;
+    }
+    .school{
+        padding: 2px 2px 2px 2rem;
+        margin-left: -2rem;
+        border-top-left-radius: 10px;
+    }
+
+    /* Project */
+    #project div{
+        justify-content: center;
+    }
+    .image-card{
+        height: 18em;
+    }
+    .image-card-hover{
+        height: 14rem;
+        margin-top: 4rem;
+    }
+
+    /* Skills */
+    #skills{
+        padding: 4rem 1rem;
+    }
+    .text{
+        padding: 2px;
+    }
+    .text span{
+        height: 4rem;
+        width: 4rem;
+        margin: 4px;
+    }
+    .text span img{
+        height: 2rem;
+        width: 3rem;
+    }
+
+    /* Contact */
+    #contact{
+        display: block;
+        padding: 1rem;
+    }
+    .cot-img{
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+
+        /* text-align: center; */
+    }
+    .cot-img .contact-details{
+        margin-left: 0px;
+        /* padding: 2px; */
+    }
+    .cot-img img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .cot-img p{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .contactform{
+        text-align: center;
+    }
+    .contactform form{
+        width: 22rem;
+        height: 20rem;
+        padding: 10px 0 10px 8px;
+    }
+    .contactform form::before{
+        transform: translate(-11.55rem, -11.5px);
+        padding: 1px;
+        margin: 0 4px;
+    }
+    .inputs{
+        width: 20rem;
+    }
+    .form-control:focus ~ .label-control,
+    .form-control:valid ~ .label-control{
+        transform: translate(-22px, -19px);
+    }
+    .form-btn{
+        margin-left: -2rem;
+    }
+    .label-control{
+        left: 4rem;
     }
 }

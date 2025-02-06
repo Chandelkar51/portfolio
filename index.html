@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="rsponcive.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="rsponcive.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -18,23 +21,24 @@
                 Nikhil<span >Chandelkar</span>
             </div>
             <div class="links">
-                <a href=".class" class="link" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="100">Home</a>
-                <a href="#" class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">About</a>
-                <a href="#" class="link" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">Skills</a>
-                <a href="#" class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Project</a>
-                <a href="#" class="link" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="400">Contect</a>
+                <a href="#" class="link" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="100">Home</a>
+                <a href="#about" class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">About</a>
+                <a href="#skills" class="link" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">Skills</a>
+                <a href="#project" class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Project</a>
+                <a href="#contact" class="link" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="400">Contact</a>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
             <div class="dropdown">
                 <a href="#" class="">Home</a>
-                <a href="#" class="">About</a>
-                <a href="#" class="">Skills</a>
-                <a href="#" class="">Project</a>
-                <a href="#" class="">Contect</a>
+                <a href="#about" class="">About</a>
+                <a href="#skills" class="">Skills</a>
+                <a href="#project" class="">Project</a>
+                <a href="#contact" class="">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
     </nav>
+
     <div class="main">
         <div class="image"  data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600">
             <img src="/assets/mainImage.jpg" alt="...." >
@@ -46,21 +50,147 @@
                 <span id="typewriter-text"></span>
                 <label for="typewriter">|</label>
             </div>
-            <p data-aos="flip-down" data-aos-duration="1600" data-aos-delay="1100">I’m a dedicated web developer passionate about creating responsive, user-friendly websites. With expertise in both front-end and back-end technologies, I focus on delivering efficient, high-quality digital solutions tailored to client needs.</p>
+            <p data-aos="flip-down" data-aos-duration="1600" data-aos-delay="1100">
+                I'm a paotionate about web devlopment, codding and solving the problems related to real world.
+                My communicatiion is good in languages[Hindi, English]. I maintained the my programing profiles on some wellKnow plateforms [Leatcode, GeeksForGeeks, CodeForces, Hakerrank].
+                <br>I am looking for a role as intern, ready to seeking a challenges with the organizations to utilize my skils and contribute in company's growth as well as learn new things and gain some exprience.
+            </p>
             <div class="social-links">
                 <a href="#" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="1400"><i class="fa-brands fa-github"></i></a>
                 <a href="#" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="1600"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="1700"><i class="fa-brands fa-facebook"></i></a>
             </div>
-            <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="2000">
-                <button>Hire Me</button>
+            <div class="btns" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="2000">
+                <button onclick="window.open('https://drive.google.com/file/d/1ErG-t0K1LKLE-fMqmrKh4hRqTWzKB8re/view?usp=drive_link', '_blank')" class="resume">
+                    Resume
+                </button>
+                <button class="btn" onclick="window.location.href='mailto:nikhil05052001@gmail.com?subject=Hello&body=Hi there,' ">
+                    Hire Me
+                </button>
             </div>
         </div>
     </div>
-    <!-- <div class="about">
-        
-    </div> -->
+    <hr>
+    <div id="edu">
+        <h1 class="headings">Education Details</h1>
+        <div class="education">
+            <div class="box1">
+                <div class="before"><span>Post</span>Graduation</div>
+                <div class="current">
+                    <h2>Master in Computer Aplication</h2>
+                    <p>National Institute Of Technology Jamshedpur</p>
+                    <p>(2023-2026)</p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="before">Graduation</div>
+                <div class="graduation">
+                    <h2>B.Sc. in Computer Science</h2>
+                    <p>Govt. Jaywanti Haksar PG College, Betul (MP)</p>
+                    <p>(2019-2022)</p> 
+                </div>
+            </div>
+            <div class="box3">
+                <div class="before">Schooling</div>
+                <div class="school">
+                    <h2>10<sup>th</sup> And 12<sup>th</sup></h2>
+                    <p>Govt. Exllence H. S. School Amla, dist. Betul (MP)</p>
+                    <p>10<sup>th</sup>: (2016), 12<sup>th</sup>: (2018)</p>                
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    <hr>
+    <div id="skills">
+        <h1 class="headings">Technical Skills</h1>
+        <div class="text">
+            <span> <img src="./assets/icons/letter-c_7553029.png" alt=""></span>
+            <span> <img src="./assets/icons/c_6132222.png" alt=""></span>
+            <span> <img src="./assets/icons/java_5968282.png" alt=""></span>
+            <span> <img src="./assets/icons/sql-server_4492311.png" alt=""></span>
+            <span> <img src="./assets/icons/html-5_5968267.png" alt=""></span>
+            <span> <img src="./assets/icons/css-3_5968242.png" alt=""></span>
+            <span> <img src="./assets/icons/java-script_721671.png" alt=""></span>
+            <span> <img src="./assets/icons/science_10303368.png" alt=""></span>
+            <span> <img src="./assets/icons/nodejs.png" alt=""></span>
+            <span> <img src="./assets/icons/icons8-express-js-50.png" alt=""></span>
+            <span> <img src="./assets/icons/mongodb.png" alt=""></span>
+            <span> <img src="./assets/icons/typescript.png" alt=""></span>
+            <span> <img src="./assets/icons/redux.256x243.png" alt=""></span>
+            <span> <img src="./assets/icons/python_5968350.png" alt=""></span>
+
+        </div>
+        <!-- <div class="images">
+            <img src="./assets/programmer-working-laptop-character.png" alt="NA">
+        </div> -->
+    </div>
+
+    <hr>
+    <div id="project">
+        <h1 class="headings">My Works</h1>
+        <div>
+            <div class="image-card">
+                <img src="./assets/simon-brain.jpg" alt="NA">
+                <div class="image-card-hover">
+                    <h3>Simon Says Game</h3>
+                    <p>Players must memorize and repeat an increasing sequence of colors, or buttons. The game starts easy but becomes more challenging as the sequence gets longer.</p>
+                    <a href="https://github.com/Chandelkar51/Simon">Github &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="./assets/pexels-jplenio-1118873.jpg" alt="NA">
+                <div class="image-card-hover">
+                    <h3>Weather Update</h3>
+                    <p>A real-time weather update web, fetches live weather data using an API and displays current conditions like temperature, humidity, and wind speed. Users can search for any city or allow location access for automatic updates. </p>
+                    <a href="https://github.com/Chandelkar51/WeatherUpdate">Github &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="./assets/wonderLust.jpg" alt="NA">
+                <div class="image-card-hover">
+                    <h3>Wanderlust</h3>
+                    <p>Wanderlust, is a travel website designed for adventure seekers, destination insights, and trip planning tools. It helps users explore new places, discover hidden gems, and plan unforgettable journeys with ease. And, it allows users to book accommodations and activities directly through the platform.</p>
+                    <a href="https://github.com/Chandelkar51/wanderlust">Github &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div id="contact">
+        <div class="cot-img">
+            <img src="./assets//background-with-contact-elements.png" alt="" >
+            <div class="contact-details">
+                <p><i class="fa-solid fa-tty"></i> : +91 6263178358</p>
+                <p><i class="fa-solid fa-envelope"></i> : nikhil0505@gmail.com</p>
+            </div>
+        </div>
+        <div class="contactform" >
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="5794635a-0093-4987-9383-5b0ced70be6f">
+                <div class="inputs" >
+                    <input type="text" name="name" class="form-control" placeholder="" required="required" >
+                    <label for="name" class="label-control">Your Name</label>
+                </div>
+                <div class="inputs">
+                    <input type="email" name="email"  class="form-control" required="required">
+                    <label for="" class="label-control">Your Email</label>
+                </div>                
+                <div class="inputs">
+                    <textarea name="message" class="form-control" required ></textarea>
+                    <label for="" class="label-control">Message</label>
+                </div>
+                <div class="inputs">
+                    <button class="form-btn">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="end">
+        <h1 id="great">Tanks To Visit</h1>
+    </div>
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>

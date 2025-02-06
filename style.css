@@ -8,13 +8,17 @@
 body{
     height: 100vh;
     width: 100%;
-    /* overflow: hidden; */
-    background-color: rgb(86, 39, 6);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #F5EFE7;
 }
 nav{
     width: 100%;
     height: 10vh;
-    position: sticky;
+    position: fixed;
+    background-color: #1E0342;
+    border-bottom: 2px solid rgba(60, 60, 60, 0.922);
+    z-index: 3;
 }
 .navbar{
     width: 100%;
@@ -28,10 +32,11 @@ nav{
     font-size: 2rem;
     font-weight: bold;
     margin-left: 4rem;
+    text-shadow: 2px 0px 2px #f7bcbc;
 }
 .logo span{
-    color: #077b32;
-    text-shadow: 0 0 10px #077b32;
+    color: #79D7BE;
+    text-shadow: 2px 2px 4px #79D7BE;
 }
 .hamburg,
 .cancel{
@@ -63,14 +68,14 @@ nav{
     left: 0;
     width: 0;
     height: 3px;
-    background-color: #077b32;
+    background-color: #79D7BE;
     transition: .2s linear;
 }
 .links a:hover::before{
     width: 100%;
 }
 .links a:hover{
-    color: #077b32;
+    color: #79D7BE;
 }
 .dropdown{
     z-index: 100;
@@ -91,12 +96,14 @@ nav{
     justify-content: center;
     padding: 15px 0;
     align-items: center;
-    transition: .2s linear;
+    transition: .5s linear;
 }
 
 .dropdown a:hover{
-    color: #077b32;
-    background-color: #494205d1;
+    color: #1E0342;
+    background-color: #79D7BE;
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 section{
@@ -104,28 +111,29 @@ section{
     height: 90vh;
 }
 
+/* Main  */
 .main{
     width: 100%;
-    height: 100%;
+    padding: 7rem 0 4rem 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .image{
     width: 470px;
-    height: 70vh;
+    height: 450px;
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0 50px #077b32;
+    box-shadow: 0 0 50px #D8C4B6;
 }
 .image img{
-    width: 100%;
-    height: 100%;
+    width: inherit;
+    height: inherit;
 }
 .image:hover{
     animation: animate 1.5s ease-in-out infinite;
 }
-@keyframes animate {
+/* @keyframes animate {
     0%{
         scale: 1;
     }
@@ -135,7 +143,7 @@ section{
     100%{
         scale: 1;
     }
-}
+} */
 .content{
     color: #000;
     width: 50%;
@@ -143,7 +151,7 @@ section{
 }
 h1 span{
     font-size: clamp(1rem,1rem+5vw,1rem);
-    color: #077b32;
+    color: #1E0342;
 }
 .typewriter{
     font-size: clamp(2rem,2.5rem+5vW, 3rem);
@@ -151,11 +159,12 @@ h1 span{
 
 }
 #typewriter-text{
-    color: #077b32;
-    text-shadow: 0 0 10px #077b32;
+    color: #0E46A3;
+    text-shadow: 0 0 10px #101010;
 }
 .content p{
     font-size: clamp(2rem, 3rem+9vh,3rem);
+    font-weight: 450;
     margin: 10px 0;
 }
 
@@ -166,8 +175,8 @@ h1 span{
     height: 3rem;
     justify-content: center;
     align-items: center;
-    color:rgb(248, 171, 76);
-    border: 3px solid #494205; 
+    color:#0E46A3;
+    border: 3px solid #1E0342; 
     border-radius: 20px ;
     margin: 2px 5px;
     font-size: 1.5rem;
@@ -176,12 +185,13 @@ h1 span{
 .social-links a i:hover{
     scale: 1.2;
     color: #000;
-    background-color: #f10509e1;
-    filter: drop-shadow(0 0 30px rgba(255, 0, 0, 0.908));
+    background-color: #79D7BE;
+    filter: drop-shadow(0 0 20px #1E0342);
 }
-.btn button{
-    background-color: #f10509;
-    color: #fff;
+
+.btn{
+    background-color: #0E46A3;
+    color: aliceblue;
     width: 8rem;
     height: 2.5rem;
     font-size: 1.5rem;
@@ -189,14 +199,45 @@ h1 span{
     border-radius: 10px;
     border: none;
     outline: none;
-    margin: 20px 30px;
+    margin: 20px ;
     text-align: center;
-    transition: .2s linear;
+    transition: .4s linear;
 }
-.btn button:hover{
+.btn:hover{
     scale: 1.2;
-    border: 2px solid #077b32;
-    background-color: transparent;
+    border: 2px solid #1E0342;
     font-weight: 700;
-    box-shadow: 0 0 25px #077b32;
+    color: #1E0342;
+    background-color: #9AC8CD;
+    box-shadow: 0 0 22px #1e0342bd;
+}
+
+.resume{
+    background-color: #79D7BE;
+    color: #1E0342;
+    width: 5rem;
+    height: 2.2rem;
+    text-align: center;
+    padding: 4px;
+    font-size: 1.1rem;
+    font-weight: 550;
+    border-radius: 8px;
+    margin: 18px 0 20px 20px 20px;
+    border: none;
+    outline: none;
+    transition: .4s linear;
+}
+.resume:hover{
+    scale: 1.1;
+    border: 2px solid #1E0342;
+    color: #0E46A3;
+    background-color: #9AC8CD;
+    box-shadow: 0 0 20px #1e0342be;
+    font-size: 1rem;
+}
+.headings{
+    color:#1E0342;
+    padding: 2px;
+    text-align: center;
+    margin-bottom: 0 2rem;
 }
