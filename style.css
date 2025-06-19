@@ -192,21 +192,21 @@ h1 span{
 .btn{
     background-color: #0E46A3;
     color: aliceblue;
-    width: 8rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
     font-weight: 500;
     border-radius: 10px;
     border: none;
     outline: none;
-    margin: 20px ;
+    margin: 20px 10px ;
     text-align: center;
     transition: .4s linear;
 }
 .btn:hover{
-    scale: 1.2;
+    scale: 1.15;
     border: 2px solid #1E0342;
-    font-weight: 700;
+    font-weight: 600;
     color: #1E0342;
     background-color: #9AC8CD;
     box-shadow: 0 0 22px #1e0342bd;
@@ -215,14 +215,14 @@ h1 span{
 .resume{
     background-color: #79D7BE;
     color: #1E0342;
-    width: 5rem;
+    width: 6rem;
     height: 2.2rem;
     text-align: center;
     padding: 4px;
-    font-size: 1.1rem;
-    font-weight: 550;
+    font-size: 1.2rem;
+    font-weight: 500;
     border-radius: 8px;
-    margin: 18px 0 20px 20px 20px;
+    margin: 18px 0 20px 20px;
     border: none;
     outline: none;
     transition: .4s linear;

@@ -11,7 +11,7 @@ function cancel() {
     hBurg.style.display="inline";
 }
 
-const text=["FULLSTACK DEVELOPER", "Programer"];
+const text=["FULLSTACK DEVELOPER", "Problem solver", "Programer"];
 let speed=100;
 const textElm=document.querySelector("#typewriter-text");
 let textIndex=0;

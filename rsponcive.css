@@ -63,11 +63,11 @@
     /* Project */
     .image-card{
         width: 18em;
-        height: 20em;
+        height: 22em;
     }
     .image-card-hover{
-        height: 14rem;
-        margin-top: 6rem;
+        height: 18rem;
+        margin-top: 4rem;
     }
 
     /* Contact */
@@ -82,7 +82,7 @@
         transform: translate(-22px, -19px);
     }
     .inputs{
-        width: 18rem;
+        width: 17rem;
     }
 }
 
@@ -143,11 +143,15 @@
         justify-content: center;
     }
     .image-card{
-        height: 18em;
+        height: 21rem;
     }
     .image-card-hover{
-        height: 14rem;
-        margin-top: 4rem;
+        height: 18rem;
+        margin-top: 3rem;
+        padding-bottom: 2px;
+    }
+    .image-card-hover a{
+        padding-left: 4px;
     }
 
     /* Skills */
@@ -174,14 +178,10 @@
     }
     .cot-img{
         display: flex;
-        /* justify-content: space-between; */
         align-items: center;
-
-        /* text-align: center; */
     }
     .cot-img .contact-details{
         margin-left: 0px;
-        /* padding: 2px; */
     }
     .cot-img img{
         width: 8rem;
